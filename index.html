@@ -1,1 +1,168 @@
-hello word
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayam Rendang</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #ffa12c;
+           
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            max-width: 850px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .login {
+            width: 400px;
+        }
+
+        form {
+            width: 250px;
+            margin: 60px auto;
+        }
+        h1 {
+            margin: 10px;
+            text-align: center;
+            font-weight: bolder;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        hr{
+            border-top: 2px solid #ffa12c;
+        }
+
+        p{
+            text-align: center;
+            margin: 10px;
+        }
+
+        
+    .right img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         border-top-left-radius: 15px;
+         border-bottom-left-radius: 15px;
+        }
+        
+
+        form label {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 5px;
+
+        }
+
+       input{
+        width: 100%;
+        margin: 2px;
+        border: none;
+        outline: none;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid gray;
+
+        }
+
+        button{
+            border: none;
+            outline: none;
+            padding: 7px;
+            width: 100%;
+            color: #aff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;   
+            border-radius: 5px;
+            background: #ffa12c;
+        }
+
+        @media (max-width: 880px) {
+            .container {
+                width: 100%;
+                max-width: 750px;
+                margin-left: 20px;
+                margin-right: 20px;
+                flex-direction: column;
+            }
+
+            form {
+                width: 90%;
+                
+            }
+
+            .login {
+                width: 100%;
+                
+            }
+
+            button {
+                width: 100%;
+
+            }
+
+            .right img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0 0 15px 15px;
+                
+            }
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <form action="">
+                <h1>Login</h1>
+                <hr>
+                <h1>Asdela Cibarusah</h1>
+                <label for="">Email</label>
+                <input type="text" placeholder="rangga@gmail.com">
+                <label for="">Password?</label>
+                <input type="text" placeholder="password">
+
+                <button>Login</button>
+                <p>
+                    <a href="#">Forget password</a>
+                </p>
+            </form>
+
+        </div>
+
+        <div class="right">
+            <!-- <img src="https://picsum.photos/400/300" alt=""> -->
+           <img src="gambar/ayam.jpg" alt=""> 
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
